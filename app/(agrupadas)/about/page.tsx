@@ -8,7 +8,11 @@ export const metadata: Metadata={
 
 const AbaoutPage = () => {
   return (
-    <div>AbaoutPage</div>
+    <div className=" flex flex-col items-center p-24">
+        <span className="text-lg">Hola mundo desde about</span>
+        <span className="text-7xl">página de about</span>
+
+    </div>
   )
 }
 
