@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-
+import style from "./ActiveLink.module.css"
 import { usePathname } from "next/navigation"
 
 interface Props {
@@ -8,9 +8,9 @@ interface Props {
     name: string,
 }
 const ActiveLink = ({path, name}:Props) => {
-  const pathName= usePathname()
+  
   return (
-    <Link
+    <Link 
     href={path} >{name}</Link>
   )
 }
